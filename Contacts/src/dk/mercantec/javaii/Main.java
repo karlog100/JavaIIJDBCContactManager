@@ -1,6 +1,7 @@
 package dk.mercantec.javaii;
 
 import java.sql.*;
+import dk.mercantec.javaii.SQLite;
 
 public class Main {
 
@@ -34,6 +35,9 @@ public class Main {
                 System.err.println(e);
             }
         }
+
+        SQLite mySQL = new SQLite();
+        mySQL.SQLiteInsert("INSERT INTO internal VALUES(name, phone, email, department)";
 
         UI ui = new UI(new Contacts());
         while (true) {
